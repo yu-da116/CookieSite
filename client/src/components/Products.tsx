@@ -14,21 +14,21 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: "ペストリー",
-      description: "あなたの満足を満たす天国のペストリーの創作",
-      imageUrl: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80",
+      name: "アイシングクッキー",
+      description: "かわいい動物モチーフのアイシングクッキー",
+      imageUrl: "/assets/cookie1.jpg",
     },
     {
       id: 2,
-      name: "クッキー",
-      description: "感動間違いなしの美味しく退屈的なクッキー",
-      imageUrl: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
+      name: "イースターモチーフ",
+      description: "季節に合わせた特別なデザインクッキー",
+      imageUrl: "/assets/cookie2.jpg",
     },
     {
       id: 3,
-      name: "パン",
-      description: "焼き立ての食パンがたまらない",
-      imageUrl: "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
+      name: "贈り物クッキー",
+      description: "大切な人への心のこもったメッセージ付きクッキー",
+      imageUrl: "/assets/cookie3.jpg",
     }
   ];
 

@@ -5,14 +5,16 @@ interface LogoProps {
 }
 
 const Logo = ({ size = "default" }: LogoProps) => {
-  const textClasses = size === "default" 
-    ? "font-rounded text-2xl font-bold text-brown-default" 
-    : "font-rounded text-xl font-bold text-brown-default";
-
+  const logoSize = size === "default" ? "h-10" : "h-8";
+  
   return (
-    <span className={textClasses}>
-      <span className="inline-block transform-gpu">M</span>eow <span className="inline-block transform-gpu">m</span>eow
-    </span>
+    <div className="flex items-center">
+      <img 
+        src="/assets/logo.jpg" 
+        alt="Meow meow" 
+        className={`${logoSize} object-contain`} 
+      />
+    </div>
   );
 };
 

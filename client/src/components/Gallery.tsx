@@ -14,23 +14,23 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      imageUrl: "https://images.unsplash.com/photo-1607478900766-efe13248b125?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
-      alt: "ケーキ作品"
+      imageUrl: "/assets/cookie4.jpg",
+      alt: "猫のデザインクッキー"
     },
     {
       id: 2,
-      imageUrl: "https://images.unsplash.com/photo-1564620299947-b55d0d21b068?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
-      alt: "アイシングクッキー"
+      imageUrl: "/assets/cookie5.jpg",
+      alt: "バレンタインデザインクッキー"
     },
     {
       id: 3,
-      imageUrl: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
-      alt: "デコレーションケーキ"
+      imageUrl: "/assets/cookie6.jpg",
+      alt: "誕生日モチーフのクッキー"
     },
     {
       id: 4,
-      imageUrl: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=989&q=80",
-      alt: "焼き立てパン"
+      imageUrl: "/assets/cookie7.jpg",
+      alt: "うさぎモチーフのクッキー"
     }
   ];
 
