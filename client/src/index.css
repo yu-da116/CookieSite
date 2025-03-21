@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Custom styles for the project */
+:root {
+  --beige: #e8dcc9;
+  --beige-light: #f0e7da;
+  --beige-dark: #d4c5a9;
+  --cream: #faf7f2;
+  --brown-default: #6d5c48;
+  --brown-light: #8a7964;
+  --accent: #d1b68b;
+}
+
+/* Global styles */
+body {
+  background-color: var(--cream);
+  color: var(--brown-default);
+}
+
+/* Animation for section fade-in */
+.section-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navigation active link style */
+.nav-link.active {
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--brown-default);
+}
+
+/* FullCalendar custom styles */
+.custom-calendar .fc-header-toolbar {
+  margin-bottom: 1rem;
+}
+
+.custom-calendar .fc-day-today {
+  background-color: rgba(232, 220, 201, 0.2) !important;
+}
+
+.custom-calendar .fc-col-header-cell {
+  background-color: var(--beige-light);
+  color: var(--brown-default);
+  padding: 8px 0;
+}
+
+.custom-calendar .fc-daygrid-day-number {
+  color: var(--brown-default);
+  padding: 8px 12px;
+}
+
+.available-lesson {
+  background-color: rgba(209, 182, 139, 0.2) !important;
+  border-color: var(--accent) !important;
+}
+
+.fully-booked-lesson {
+  background-color: rgba(138, 121, 100, 0.2) !important;
+  border-color: var(--brown-light) !important;
+}
