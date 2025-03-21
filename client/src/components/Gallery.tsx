@@ -11,26 +11,26 @@ const Gallery = () => {
     }
   }, []);
 
-  const galleryImages = [
+  const galleryItems = [
     {
       id: 1,
-      imageUrl: "/assets/cookie4.jpg",
-      alt: "猫のデザインクッキー"
+      title: "猫のデザインクッキー",
+      color: "bg-purple-100"
     },
     {
       id: 2,
-      imageUrl: "/assets/cookie5.jpg",
-      alt: "バレンタインデザインクッキー"
+      title: "バレンタインデザインクッキー",
+      color: "bg-pink-100"
     },
     {
       id: 3,
-      imageUrl: "/assets/cookie6.jpg",
-      alt: "誕生日モチーフのクッキー"
+      title: "誕生日モチーフのクッキー",
+      color: "bg-yellow-100"
     },
     {
       id: 4,
-      imageUrl: "/assets/cookie7.jpg",
-      alt: "うさぎモチーフのクッキー"
+      title: "うさぎモチーフのクッキー",
+      color: "bg-blue-100"
     }
   ];
 
@@ -45,13 +45,11 @@ const Gallery = () => {
         </h2>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {galleryImages.map((image) => (
-            <div key={image.id} className="overflow-hidden rounded-lg shadow-sm">
-              <img 
-                src={image.imageUrl} 
-                alt={image.alt} 
-                className="w-full h-64 object-cover transition-all duration-300 hover:scale-105" 
-              />
+          {galleryItems.map((item) => (
+            <div key={item.id} className={`${item.color} overflow-hidden rounded-lg shadow-sm h-64 flex items-center justify-center p-4 transition-all duration-300 hover:scale-105`}>
+              <p className="text-center font-medium text-brown-default">
+                {item.title}
+              </p>
             </div>
           ))}
         </div>

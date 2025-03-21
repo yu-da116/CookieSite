@@ -49,12 +49,14 @@ const Lessons = ({ onReserveClick }: LessonsProps) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           {lessonTypes.map((lesson) => (
             <div key={lesson.id} className="bg-white p-8 rounded-lg border border-beige-light shadow-sm">
-              <div className="mb-4 rounded-lg overflow-hidden h-48">
-                <img 
-                  src={lesson.image} 
-                  alt={lesson.title} 
-                  className="w-full h-full object-cover"
-                />
+              <div className={`mb-4 rounded-lg overflow-hidden h-48 flex items-center justify-center ${
+                lesson.id === 1 ? 'bg-blue-100' : 
+                lesson.id === 2 ? 'bg-green-100' : 
+                'bg-yellow-100'
+              }`}>
+                <p className="text-lg font-semibold text-brown-default px-4 text-center">
+                  {lesson.title}
+                </p>
               </div>
               <h3 className="font-serif text-xl font-bold mb-4 text-center text-brown-default">
                 {lesson.title}
