@@ -18,18 +18,21 @@ const Lessons = ({ onReserveClick }: LessonsProps) => {
   const lessonTypes = [
     {
       id: 1,
-      title: "初めての方向けレッスン",
-      description: "お菓子作りの基本を学べる初心者向けのレッスンです。楽しく学びながら素敵なお菓子を作りましょう！",
+      title: "初めてのアイシングクッキー",
+      description: "アイシングクッキー作りの基本を学べる初心者向けのレッスンです。かわいい動物デザインのクッキーを一緒に作りましょう！",
+      image: "/assets/cookie4.jpg"
     },
     {
       id: 2,
-      title: "誕生日レッスン",
-      description: "大切な人への誕生日ケーキを手作りするためのスペシャルレッスン。思い出に残る特別なケーキを作りましょう！",
+      title: "季節のモチーフレッスン",
+      description: "Easter・クリスマス・バレンタインなど、季節に合わせたデザインのアイシングクッキーを作るスペシャルレッスン。",
+      image: "/assets/cookie7.jpg"
     },
     {
       id: 3,
-      title: "月替わりレッスン",
-      description: "季節の素材や旬の味覚を取り入れた、月ごとに変わる特別なレッスン。毎月新しいお菓子に挑戦しましょう！",
+      title: "オーダーメイドギフトレッスン",
+      description: "大切な人への贈り物にぴったりの、メッセージ付きアイシングクッキーの作り方を学ぶレッスン。心を込めた手作りギフトを作りましょう！",
+      image: "/assets/cookie3.jpg"
     }
   ];
 
@@ -46,6 +49,13 @@ const Lessons = ({ onReserveClick }: LessonsProps) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           {lessonTypes.map((lesson) => (
             <div key={lesson.id} className="bg-white p-8 rounded-lg border border-beige-light shadow-sm">
+              <div className="mb-4 rounded-lg overflow-hidden h-48">
+                <img 
+                  src={lesson.image} 
+                  alt={lesson.title} 
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <h3 className="font-serif text-xl font-bold mb-4 text-center text-brown-default">
                 {lesson.title}
               </h3>

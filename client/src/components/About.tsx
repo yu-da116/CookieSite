@@ -19,12 +19,12 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-3xl font-bold mb-8 text-brown-default">
-            完璧な焼き具合を求めて
+            心を込めて作る、世界に一つだけのアート
           </h2>
           
           <p className="mb-6 text-brown-default leading-relaxed">
-            シュレットベーカリーで美味しさを発見。愛情を込めて丁寧に作られた、焼きたてのおやつをかじる様子を想像してみてください。想像する
-            必要はありません。私たちのペストリーは、焼いたその日に包装し、配達されるため、オーブンで焼きたてのおいしさをお約束します。
+            Meow meowアイシングクッキー教室では、一つ一つ丁寧に手作りされたクッキーに、カラフルで美しいアイシングデコレーションを施す方法をお教えします。
+            初めての方でも簡単に始められるよう、基本的な技術からステップバイステップでレクチャー。プロのアイシングアーティストが丁寧に指導します。
           </p>
           
           <div className="mt-10 flex justify-center">
@@ -33,8 +33,29 @@ const About = () => {
           
           <div className="mt-10">
             <h3 className="font-serif text-2xl font-bold mb-4 text-brown-default">
-              最高級の天然成分で焼き上げています。焼きたての状態でお届けします。
+              高品質な材料と道具を使用し、安心・安全なお菓子作りをサポートします。
             </h3>
+          </div>
+          
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h4 className="font-serif text-xl font-semibold mb-3 text-brown-default">教室の特徴</h4>
+              <ul className="list-disc pl-5 text-brown-light">
+                <li>少人数制で丁寧な指導</li>
+                <li>初心者でも安心のステップバイステップレッスン</li>
+                <li>オリジナルデザインのサポート</li>
+                <li>季節のイベントに合わせたクラス</li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h4 className="font-serif text-xl font-semibold mb-3 text-brown-default">レッスン内容</h4>
+              <ul className="list-disc pl-5 text-brown-light">
+                <li>基本的なアイシング技術</li>
+                <li>カラーミキシングとデザイン</li>
+                <li>細部の装飾テクニック</li>
+                <li>ギフトラッピングのコツ</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

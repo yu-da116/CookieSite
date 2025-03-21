@@ -25,8 +25,8 @@ const Hero = ({ onCTAClick }: HeroProps) => {
           <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                alt="焼きたてのパン" 
+                src="/assets/cookie1.jpg" 
+                alt="かわいいアイシングクッキー" 
                 className="w-full h-auto object-cover" 
               />
             </div>
@@ -43,7 +43,7 @@ const Hero = ({ onCTAClick }: HeroProps) => {
             </div>
             
             <p className="mb-8 text-brown-default">
-              シュレットベーカリーでは、最高級の天然成分だけを使用して、丁寧に手作りした焼き立ての美味しさをお届けします。初心者から経験者まで楽しく学べるレッスンをご用意しています。
+              Meow meowアイシングクッキー教室では、かわいくて美味しいアイシングクッキーの作り方をお教えします。可愛い動物デザインから季節のモチーフまで、初心者から経験者まで楽しく学べるレッスンをご用意しています。
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
