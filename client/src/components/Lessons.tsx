@@ -20,19 +20,19 @@ const Lessons = ({ onReserveClick }: LessonsProps) => {
       id: 1,
       title: "初めてのアイシングクッキー",
       description: "アイシングクッキー作りの基本を学べる初心者向けのレッスンです。かわいい動物デザインのクッキーを一緒に作りましょう！",
-      image: "/assets/cookie4.jpg"
+      image: "./assets/cookie4.jpg"
     },
     {
       id: 2,
       title: "季節のモチーフレッスン",
       description: "Easter・クリスマス・バレンタインなど、季節に合わせたデザインのアイシングクッキーを作るスペシャルレッスン。",
-      image: "/assets/cookie7.jpg"
+      image: "./assets/cookie7.jpg"
     },
     {
       id: 3,
       title: "オーダーメイドギフトレッスン",
       description: "大切な人への贈り物にぴったりの、メッセージ付きアイシングクッキーの作り方を学ぶレッスン。心を込めた手作りギフトを作りましょう！",
-      image: "/assets/cookie3.jpg"
+      image: "./assets/cookie3.jpg"
     }
   ];
 

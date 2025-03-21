@@ -25,7 +25,7 @@ const Hero = ({ onCTAClick }: HeroProps) => {
           <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="/assets/cookie1.jpg" 
+                src="./assets/cookie1.jpg" 
                 alt="かわいいアイシングクッキー" 
                 className="w-full h-auto object-cover" 
               />

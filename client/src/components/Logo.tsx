@@ -5,15 +5,13 @@ interface LogoProps {
 }
 
 const Logo = ({ size = "default" }: LogoProps) => {
-  const logoSize = size === "default" ? "h-10" : "h-8";
+  const textSize = size === "default" ? "text-2xl" : "text-xl";
   
   return (
     <div className="flex items-center">
-      <img 
-        src="/assets/logo.jpg" 
-        alt="Meow meow" 
-        className={`${logoSize} object-contain`} 
-      />
+      <span className={`${textSize} font-serif font-bold text-brown-default`}>
+        Meow meow
+      </span>
     </div>
   );
 };
